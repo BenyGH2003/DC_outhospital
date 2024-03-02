@@ -23,9 +23,9 @@ def predict():
     X = pd.DataFrame([row], columns = columns)
     prediction = model.predict(X)
 
-    if prediction[0] >= 0.7: 
+    if prediction[0] >= 0.3: 
         st.error('The patients is more likely not to survive :thumbsdown:')
-    elif prediction[0] < 0.7:
+    elif prediction[0] < 0.3:
         st.success('The patients is more likely to survive :thumbsup:') 
         
 
