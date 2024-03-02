@@ -3,7 +3,7 @@ category-encoders==2.6.1
 gitdb==4.0.10
 GitPython==3.1.32
 graphviz==0.20.1
-joblib==1.2.0
+joblib
 matplotlib==3.5.3
 matplotlib-inline==0.1.6
 mdit-py-plugins==0.3.3
