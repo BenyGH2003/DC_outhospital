@@ -23,9 +23,9 @@ def predict():
     X = pd.DataFrame([row], columns = columns)
     prediction = model.predict_proba(X)
     if prediction[0][1] >= 0.3: 
-        st.error('The patients is more likely not to survive :thumbsdown:')
+        st.error('The patients is more likely not to survive, based on our model :heavy_exclamation_mark:')
     elif prediction[0][1] < 0.3:
-        st.success('The patients is more likely to survive :thumbsup:') 
+        st.success('The patients is more likely to survive, based on our model :white_check_mark:') 
         
 
 trigger = st.button('Predict', on_click=predict)
