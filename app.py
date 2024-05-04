@@ -11,7 +11,7 @@ columns= [['Age', 'MRS in discharge']]
 model = joblib.load('DC.pkl')
 
 
-st.title('Prediction of outhospital mortality of patients undergoing DC :brain:')
+st.title('Prediction of outhospital mortality of ischemic stroke patients undergoing DC :brain:')
 
 age = st.number_input("Enter the patient age")
 mrs = st.number_input("Enter the MRS of patients while discharging")
